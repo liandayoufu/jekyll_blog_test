@@ -6,7 +6,8 @@
   <title>git basic usage | 勤求古训 博采众方</title>
   <meta name="author" content="老中医">
   
-  <meta name="description" content="git 基本用法关于 .gitigore如果已经提交 需要先  git rm -r –cache . 然后再   git add .">
+  <meta name="description" content="git 基本用法关于 .gitigore如果已经提交 需要先  git rm -r –cache . 然后再   git add . 
+git log 显示直观些git log --graph --all --pretty=format:&amp;#39;%Cred%h%Creset -%C(yellow)">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -77,6 +78,9 @@
     <div class="entry">
       
         <h2 id="git__u57FA_u672C_u7528_u6CD5"><a href="#git__u57FA_u672C_u7528_u6CD5" class="headerlink" title="git 基本用法"></a>git 基本用法</h2><p>关于 .gitigore<br>如果已经提交 需要先 <code> git rm -r –cache . </code><br>然后再  <code> git add . </code></p>
+<p>git log 显示直观些<br><code>git log --graph --all --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative</code></p>
+<p><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/git_log_formated_1.png?raw=true" alt="效果"></p>
+<p>可以配置别名<br><code>git config --global alias.lg &quot;log --graph --all --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative&quot;</code><br>之后用<code>git lg</code> 即可</p>
 
       
     </div>
