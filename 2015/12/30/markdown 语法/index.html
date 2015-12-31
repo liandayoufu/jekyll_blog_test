@@ -99,7 +99,12 @@
 <p><strong>sublime支持markdown语法高亮</strong></p>
 <ol>
 <li>cd到 <em>Preferences</em> –&gt; <em>Broswer Packages</em> 目录下</li>
-<li><code>git clone https://github.com/jonschlinkert/sublime-monokai-extended.git &quot;sublime-monokai-extended&quot;</code></li>
+<li><p><code>git clone https://github.com/jonschlinkert/sublime-monokai-extended.git &quot;sublime-monokai-extended&quot;</code></p>
+<p>代码标记：</p>
+<pre><code>&lt;code&gt; codes ... &lt;/code&gt;
+一对反撇括起来 `codes ...`
+行首制表符TAB
+</code></pre></li>
 </ol>
 <h2 id="u5217_u8868_u5D4C_u5957"><a href="#u5217_u8868_u5D4C_u5957" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><pre><code>* 联合作战指挥部
     + 陆军作战指挥部
@@ -127,9 +132,14 @@
 </ul>
 <pre><code>[桂枝汤](http://blog.xuchen.win &quot;老中医的博客&quot;)
 </code></pre><p><a href="http://blog.xuchen.win" title="老中医的博客">桂枝汤</a></p>
-<pre><code>![GitHub Mark](http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png &quot;GitHub Mark&quot;)
-</code></pre><p><img src="http://github.global.ssl.fastly.net/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Mark" title="GitHub Mark"></p>
-<p><a href="http://blog.xuchen.win">blog</a><br><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png" alt="zhongjing"></p>
+<pre><code>![仲景](https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true)
+</code></pre><p><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true" alt="仲景"></p>
+<pre><code>[1]:http://blog.xuchen.win
+[2]:https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true
+
+[blog][1]
+![zhongjing][2]
+</code></pre><p><a href="http://blog.xuchen.win">blog</a><br><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true" alt="zhongjing"></p>
 
       
     </div>
