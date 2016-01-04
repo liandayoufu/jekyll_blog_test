@@ -4,7 +4,7 @@ menu:
 #  图集: /gallery
   归档: /archives
   分类: /index.html#categories
-  关于我: /README
+  关于我: /about
 
 submenu:
   订阅: /atom.xml
