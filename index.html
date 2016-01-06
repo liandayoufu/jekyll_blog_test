@@ -88,26 +88,19 @@
 
     <div class="entry">
       
-        <div id="toc" class="toc-article">
-	<div class="toc-title">目录</div>
-	<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F"><span class="toc-text">你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？</span></a></li></ol>
-</div>
-      
         <p> 每每听到看到医院里面人满为患，各种不治之症，各种英年早逝。在科学技术日益发达的今天，却不见人们越少受于疾病之折磨，伴之而来 的却是越来越多的病名，越来越多的无法治愈之病名，越来越多的束手无策。</p>
 <p>鸣呼哀哉！</p>
 <p><strong>想我大中华之中医历经几千年亿万生命的验证，以亿万生命血的代价换来的经验，中华传统文化之瑰宝也沦落到如此地步，真是痛哉！</strong>普遍崇尚西医，大家多以为西方西学是现代科学技术比较先进，见效快，中医疗效慢，只能调理，不能治病，各大中医院也是如此，以各种中西医结合为名头，不管看啥，进了中医院也一色先一堆检查拿了检查报告再说，仿佛没了报告就看不了病一样。殊不知，在古时，中国人没有这些个先进的仪器，看病效果竟是那样之好，诞生出那么多名医，那么多杏林佳话。而古时之所以会有那么多的重病，往往是因为当时信息交通诸多不便，求医不若现在那么方便。著名物理学家钱学森也对中医与西医有过评价，中医实乃科学，而西方医学充其量叫做科技。中医一个人往这一站就是一个医院了，这不是吹牛叉，这缘于中医对人体生理学的深刻理解和千万生命和岁月带来的经验累积。</p>
 <p>一直对中医深信不疑，无奈一直处于门外徘徊状态，终不得一窥究竟。更何况于对中医一无所知的人，定然是难以对中医树立起坚强的信心。但兵法有云，知已知彼方可百战百胜</p>
-<h3 id="u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F"><a href="#u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F" class="headerlink" title="你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？"></a><strong><code>你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？</code></strong></h3><p>昨晚睡前突然萌生一想法，结合我对中医的理解，写个程序，对中医四诊时所关注的数据和最终处方做一个收集，后面再交给机器去学习，在大量的数据分析学习的情况下，就应该大概可以得到一个医生诊断处方的习惯。如此一来对于一些常见小毛病，普通人或许就可以通过简单的做一些选择提交自己的切身感受从而得到一简单的处方。师曰：上工治未病，中工治欲病，下工治已病。让自己成为自己的医生，把一切反动派都扼杀在萌芽之中。这也利益于前几天看过一则新闻，一个歪果天才小伙自己写的程序通过现在非常火的deep learning 技术来学习自己的驾驶习惯，实现了自动驾驶。<br>这样来说望、闻、问的数据相对比较容易收集一些，当然众所周知，中医看病把脉不可缺少，这脉诊啊比较难统一，俗话讲,<em>心中了了，指下难明</em>说的就是这个事。主观判断太强，即使是有多年临床经验的老中医，也是同一个人一百人把出一百个脉，当然这是夸张了。所以对于脉象这个问题就是个难关，攻关攻关，有困难才叫攻关。<br>对于这个脉象，暂有两个思路，一是中医师在摸脉的时候需要一个传感器，能够感知脉管浮、沉、迟、数等当时的压力再加上医师的结论数据以收集，通过大量的数据进行学习，也可以学习出一个中医的摸脉诊断习惯，当然还要同时对被诊断者的高矮胖瘦，当时的节令，气候，当地所处的地理环境，患者出生和长期生活的地区等信息一并收集。这个思路的难题在于摸脉时手指施加的压力，角度等等会有不同的感觉得出不同的结论。如果有中医手指和患者寸口之间加个很薄的传感器，但这样一来指下感觉必然不准，一是隔物有厚度，感觉没有那么灵敏，二来中医讲究气血，手指与皮肤的直接接触可以气引气，才会感应的更真实更准确。<br>这第二个思路，就是对于传统文化教育的普及，习大大也多次强调中医是中华传统文化的瑰宝，中华儿女的传统文化不能丢。中国历来就是礼仪之邦。推行传统文化教育，从娃娃抓起，让娃从小就受国学经典的熏陶。当这些基本的中医知识基本的脉象为广大群众而知，就像你知道盐是咸的一样。当然开始以简为主，重要的明显的脉象晓得了，可以助力不少。真正有毛病自己处理不了还是要找看医生。<br>这是一个造福人类的项目，所以定不可以商业化，定位只能是NGO。小范围试行，进而国家各部门助力推广。</p>
-<p>从此，你只需要一个app或者任何能上网的设备，按照指示提交你自己的切身感觉，人身体才是这世界是最最精密的系统，自己的感觉才最可信。然后就会有相应简单的处方出来了。到附近的推荐的药店或者便利店或者社区甚至居委会就可以拿到便宜好用的处方。因为经方就是药简力专嘛。简单几味药，看似平淡无奇，实则包含古代圣贤数代心血，大繁至简。</p>
-<p>从此，各大医院门可罗雀，因为全民的身体素质都提高了，疾病都在刚刚有所萌芽就被调理好了。生活质量提高了，工作效率提高了，中华民族的伟大复兴指日可待。这其中节省了大量的人力物力，从而从事医疗人员可以解脱出来做更深入更有效的研究，让人类的健康唾手可得。</p>
-<p>这对于整个医药行业将是颠覆性的，绝对会远远超越互联网金融对于传统银行业带来的冲击。这对于整个国家、全人类的生活习惯都将是颠覆性的，然而这种颠覆却是我们所期望看到的。当然也会有很多人不想看到这样，那么多的西药厂，那么多以西药为生的人，必然会对此工程恨之入骨。不过自然不会是全部，从事医药行业的人可以继续从事你的行业，但是要改变了，你去种植中草药啊，现在的中药市场鱼龙混杂，各种假。解放出来这么多的人力物力正好投入到更需要的地方去。</p>
-<p>健康，本就是生物最基本的诉求。立世之本，也是最最普通的需求，怎么可以成为商业，成为敛财的行业？<br>所有人真的该好好深思一下了……</p>
-<p>诸多高科技公司在研究机器学习技术，人工智能，谷歌也早走在前列，以后可以有更多的项目开源出来，或者合作，造福人类。小扎同志就是个好同志，他的三观令人景仰。毕竟也是半个老乡，改天可以喝杯茶好好聊聊……</p>
-
+<h3 id="u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F"><a href="#u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F" class="headerlink" title="你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？"></a><strong><code>你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？</code></strong></h3>
       
     </div>
     <footer>
 <!--        -->
+        
+          <div class="alignleft">
+            <a href="/2016/01/06/大善之愿/#more" class="more-link">Read More</a>
+          </div>
         
         
         <div class="alignright">
@@ -159,69 +152,20 @@
 
     <div class="entry">
       
-        <div id="toc" class="toc-article">
-	<div class="toc-title">目录</div>
-	<ol class="toc"><li class="toc-item toc-level-5"><a class="toc-link" href="#u4E94_u53F7_u6807_u9898"><span class="toc-text">五号标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#u516D_u53F7_u6807_u9898"><span class="toc-text">六号标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#u5217_u8868_u5D4C_u5957"><span class="toc-text">列表嵌套</span></a>
-</div>
-      
         <p>号越大字越小,几个#就是几号<br><code># 一号标题</code><br><code>## 二号标题</code></p>
 <h5 id="u4E94_u53F7_u6807_u9898"><a href="#u4E94_u53F7_u6807_u9898" class="headerlink" title="五号标题"></a>五号标题</h5><h6 id="u516D_u53F7_u6807_u9898"><a href="#u516D_u53F7_u6807_u9898" class="headerlink" title="六号标题"></a>六号标题</h6><p><code>*斜体*</code> <em>斜体</em><br><code>**粗体**</code> <strong>粗体</strong></p>
-<p>引用：</p>
-<pre><code>&gt; 
-太阳之为病，脉浮，头项强痛而恶寒
-阳明病，胃家实也。
-</code></pre><blockquote>
+<p>引用：<br><code>&gt;</code><br><code>太阳之为病，脉浮，头项强痛而恶寒</code><br><code>阳明病，胃家实也。</code></p>
+<blockquote>
 <p>太阳之为病，脉浮，头项强痛而恶寒。<br>阳明病，胃家实也。</p>
 </blockquote>
-<p><code>***这里是昏割线</code></p>
-<hr>
-<p><strong>sublime支持markdown语法高亮</strong></p>
-<ol>
-<li>cd到 <em>Preferences</em> –&gt; <em>Broswer Packages</em> 目录下</li>
-<li><p><code>git clone https://github.com/jonschlinkert/sublime-monokai-extended.git &quot;sublime-monokai-extended&quot;</code></p>
-<p>代码标记：</p>
-<pre><code>&lt;code&gt; codes ... &lt;/code&gt;
-一对反撇括起来 `codes ...`
-行首制表符TAB
-</code></pre></li>
-</ol>
-<h2 id="u5217_u8868_u5D4C_u5957"><a href="#u5217_u8868_u5D4C_u5957" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><pre><code>* 联合作战指挥部
-    + 陆军作战指挥部
-         - 东部战区
-         - 西部战区
-         - 南部战区
-        - 北部战区
-        - 中部战区
-    + 海军作战指挥部
-    + 空军作战指挥部
-</code></pre><ul>
-<li>联合作战指挥部<ul>
-<li>陆军作战指挥部<ul>
-<li>东部战区</li>
-<li>西部战区</li>
-<li>南部战区</li>
-<li>北部战区</li>
-<li>中部战区</li>
-</ul>
-</li>
-<li>海军作战指挥部</li>
-<li>空军作战指挥部</li>
-</ul>
-</li>
-</ul>
-<p>插入文字链接：<br>    <a href="http://blog.xuchen.win" title="老中医的博客">桂枝汤</a><br><a href="http://blog.xuchen.win" title="老中医的博客">桂枝汤</a></p>
-<p>插入图片：<br>    <img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true" alt="仲景"><br><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true" alt="仲景"></p>
-<pre><code>[1]:http://blog.xuchen.win
-[2]:https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true
-
-[blog][1]
-![zhongjing][2]
-</code></pre><p><a href="http://blog.xuchen.win">blog</a><br><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/zhongjing.png?raw=true" alt="zhongjing"></p>
-
       
     </div>
     <footer>
 <!--        -->
+        
+          <div class="alignleft">
+            <a href="/2015/12/30/markdown 语法/#more" class="more-link">Read More</a>
+          </div>
         
         
         <div class="alignright">
@@ -273,11 +217,6 @@
 
     <div class="entry">
       
-        <div id="toc" class="toc-article">
-	<div class="toc-title">目录</div>
-	<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#git__u77E5_u8BC6_u8981_u70B9"><span class="toc-text">git 知识要点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bug__u5206_u652F_u7BA1_u7406"><span class="toc-text">bug 分支管理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Tips"><span class="toc-text">Tips</span></a></li></ol></li></ol>
-</div>
-      
         <h2 id="git__u77E5_u8BC6_u8981_u70B9"><a href="#git__u77E5_u8BC6_u8981_u70B9" class="headerlink" title="git 知识要点"></a>git 知识要点</h2><p>git 是一个去中心化的版本管理工具，不需要时时在线，只有在开发完成提交时在线即可，不同于svn需要时时在线。</p>
 <p>### </p>
 <h3 id="bug__u5206_u652F_u7BA1_u7406"><a href="#bug__u5206_u652F_u7BA1_u7406" class="headerlink" title="bug 分支管理"></a>bug 分支管理</h3><p><em>场景：</em>正在<strong>dev</strong> 分支做开发，但是还没有完成，暂时还不能提交。</p>
@@ -293,15 +232,14 @@
 <li><code>git stash list</code> 可以查看之前保存的stash信息</li>
 <li><code>git stash apply</code> 可以恢复现场，但是恢复后stash内容不删除，需要<code>git stash drop</code> 删除；<code>git stash pop</code> 相当于前面两条命令</li>
 </ul>
-<h3 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h3><p>关于 .gitigore<br>如果已经提交 需要先 <code>git rm -r --cache .</code><br>然后再  <code>git add .</code></p>
-<p>git log 显示直观些<br><code>git log --graph --all --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative</code><br>详细格式用法<code>man git-log</code>查看</p>
-<p><img src="https://github.com/liandayoufu/laozhongyi.github.com/blob/write/images/git_log_formated_1.png?raw=true" alt="效果"></p>
-<p>可以配置别名<br><code>git config --global alias.lg &quot;log --graph --all --pretty=format:&#39;%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset&#39; --abbrev-commit --date=relative&quot;</code><br>之后用<code>git lg</code> 即可</p>
-
       
     </div>
     <footer>
 <!--        -->
+        
+          <div class="alignleft">
+            <a href="/2015/12/30/git-basic-usage/#more" class="more-link">Read More</a>
+          </div>
         
         
         <div class="alignright">
@@ -351,6 +289,16 @@
     <h3 class="title">归档</h3>
 	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">2016年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">2</span></li></ul>
   </div>
+
+
+  
+
+  <div calss="widget tag">
+<h3 class="title">友情链接</h3>
+<ul class="entry">
+<li><a href="http://zhishen.blog.51cto.com/" title="51cto博客">51cto博客</a></li>
+</ul>
+</div>
 
 
   
