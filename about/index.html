@@ -47,10 +47,6 @@
 	    
 	      <a href="/">首页</a>
 	    
-	      <a href="/collection">文集</a>
-	    
-	      <a href="/gallery">图集</a>
-	    
 	      <a href="/archives">归档</a>
 	    
 	      <a href="/index.html#categories">分类</a>
@@ -123,34 +119,29 @@
   </div>
 </article>
 
-<section id="relate">
-	<script type="text/javascript" id="wumiiRelatedItems"></script>
-	<script type="text/javascript">
-	    var wumiiPermaLink = "http://blog.xuchen.win/about/index.html"; //请用代码生成文章永久的链接
-	    var wumiiTitle = "About Me"; //请用代码生成文章标题
-	    var wumiiTags = "undefined"; //请用代码生成文章标签，以英文逗号分隔，如："标签1,标签2"
-	    var wumiiCategories = "undefined"; //请用代码生成文章分类，分类名放在 JSONArray 	中，如: ["分类1", "分类2"]
-	    var wumiiSitePrefix = "http://blog.xuchen.win";
-	    var wumiiParams = "&num=6&mode=3&pf=JAVASCRIPT";
-	</script>
-	<script type="text/javascript" src="http://widget.wumii.cn/ext/relatedItemsWidget"></script>
-	<a href="http://www.wumii.com/widget/relatedItems" style="border:0;">
-	    <img src="http://static.wumii.cn/images/pixel.png" alt="无觅关联推荐，快速提升流量" style="border:0;padding:0;margin:0;" />
-	</a>
-</section>
-
 
 <section id="comment">
 <!--   <h1 class="title">留言</h1> -->
 
 
-    <script type="text/javascript" id="wumiiComments">
-    var wumiiPermaLink = "http://blog.xuchen.win/about/index.html"; //请用代码生成文章永久的链接
-    var wumiiTitle = "About Me"; //请用代码生成文章标题
-    var wumiiSitePrefix = "http://blog.xuchen.win"; //安装无觅评论插件的网站的域名，如果是放在子域名上，请提供子域名，如"http://blog.wumii.com"。如果这里填写的域名不对，请自行改正。
-    var wumiiCommentParams = "&pf=JAVASCRIPT";
-</script>
-<script type="text/javascript" src="http://widget.wumii.cn/ext/cw/widget"></script>
+    <!-- 多说评论框 start -->
+<div class="ds-thread" data-thread-key="about/index.html" data-title="About Me" data-url="http://blog.xuchen.win/about/index.html"></div>
+<!-- 多说评论框 end -->
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"laozhongyi"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
   
 </section>
 
@@ -158,7 +149,24 @@
 
 </div></div>
   		<aside id="sidebar" class="alignright">
-   
+  
+<div class="widget tag">
+  <h3 class="title" id="categories">分类</h3>
+<!--   
+	
+		<li><a href="/categories/mark/">mark</a><small>3</small></li>
+	
+   -->
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/mark/">mark</a><span class="category-list-count">3</span></li></ul> 
+</div>
+ 
+
+
+  
+  <div class="widget">
+    <h3 class="baidu_tuijian_title">猜你喜欢</h3>
+    <div id="东北一猛虎"></div>
+  </div>
 
 
   
@@ -167,8 +175,6 @@
 	<ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">2016年01月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">2015年12月</a><span class="archive-list-count">2</span></li></ul>
   </div>
 
-
-  
 
   <div calss="widget tag">
 <h3 class="title">友情链接</h3>
@@ -179,6 +185,35 @@
 
 
   
+<div class="widget tagcloud">
+  <h3 class="title">标签云</h3>
+  <div class="entry">
+    <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/中医/" style="font-size: 10px;">中医</a>
+  </div>
+</div>
+
+
+
+  
+<div class="widget tag">
+  <h3 class="title">最新文章</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2016/01/06/大善之愿/">大善之愿</a>
+      </li>
+    
+      <li>
+        <a href="/2015/12/30/markdown 语法/">Markdown 语法</a>
+      </li>
+    
+      <li>
+        <a href="/2015/12/30/git-basic-usage/">Git Basic Usage</a>
+      </li>
+    
+  </ul>
+</div>
+
 </aside>
            <div class="clearfix"></div>
       </div>
