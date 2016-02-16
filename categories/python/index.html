@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>升级Win10时语言不同不能保留apps | 勤求古训 博采众方</title>
+  <title>python | 勤求古训 博采众方</title>
   <meta name="author" content="老中医">
   
   <meta name="description" content="一个对中医执着的运维">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="升级Win10时语言不同不能保留apps"/>
+  
   <meta property="og:site_name" content="勤求古训 博采众方"/>
 
   
@@ -66,89 +66,46 @@
 </header>
   
       <div id="content" class="inner">
-  		<div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
-  
-  <div class="post-content">
-    <header>
-        <div class="icon"></div>
-        <time datetime="2016-02-16T07:59:27.000Z"><a href="/2016/02/16/升级Win10时语言不同不能保留apps/">2016-02-16</a></time>
-        
-  
-    <h1 class="title">升级Win10时语言不同不能保留apps</h1>
-  
+  		<div id="main-col" class="alignleft"><div id="wrapper">
 
-        
-    </header>
+<h2 class="archive-title category">python</h2>
 
-    <div class="entry">
-      
-        <div id="toc" class="toc-article">
-	<div class="toc-title">目录</div>
-	<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#u89E3_u51B3_u529E_u6CD5_uFF1A"><span class="toc-text">解决办法：</span></a></li></ol>
-</div>
-      
-        <p>公司一笔记本升级win10,自带的是OEM的中文版win7 Home Basic，因为需要用英文版，anytime upgrade到Ultimate版。现在下好了英文版win10的安装包，那么问题来了，到了选择保留哪些东西的那一步卡壳了，keep personal settings and apps那项不能选，下面有一句 <code>”You can‘t keep Windows settings, personal files, and apps because you’ve chosen to install Windows 10 using a different language than you&#39;re currently using. “</code><br>造成这个问题是因为虽然你把系统显示语言改成英文了但是UI language依然是中文，运行<code>dism /online /get-intl</code> 可以看到</p>
-<h3 id="u89E3_u51B3_u529E_u6CD5_uFF1A"><a href="#u89E3_u51B3_u529E_u6CD5_uFF1A" class="headerlink" title="解决办法："></a>解决办法：</h3><ul>
-<li>重启，按F8, 选<strong> Repair Your Computer </strong> –&gt; <strong> Command Prompt </strong></li>
-<li>` dism /image:e:\  /set-uilanguage:en-US （e是你系统所在的那个盘符，修复模式其实是启动PE系统，所以系统盘符会变，这个在你选择命令行模式的那个界面有显示，看一下就好了）</li>
-<li>再重启就可以正常安装了，微软系统从win8开始语言包就可以随便改了，家庭版也无妨。不像win7必须得是旗帜版才可以改系统语言，专业版都不好使。</li>
-</ul>
 
-      
-    </div>
-    <footer>
-<!--        -->
-        
+  <div class="archive">
+     
+      <article class="post">
+        <div class="post-content">
+          <header>
+            <div class="icon"></div>
+            <time datetime="2016-01-11T02:13:18.000Z"><a href="/2016/01/11/Python-OOP/">2016-01-11</a></time>
+            
+              <h1 class="title"><a href="/2016/01/11/Python-OOP/">Python OOP</a></h1>
+            
+<!--             
   
-  <div class="categories">
-    <a href="/categories/Windows/">Windows</a>
+  <div class="tags">
+    <a href="/tags/python-oop/">python oop</a>
+  </div>
+ -->
+          </header>
+          <div class='archive-tags'>
+            
+  
+  <div class="tags">
+    <a href="/tags/python-oop/">python oop</a>
   </div>
 
-        
-        <div class = "counter">
-  <span id="busuanzi_container_page_pv" style="display:none">
-      总访问&nbsp<span id="busuanzi_value_page_pv"></span>&nbsp次
-  </span>
-</div>
-        
-  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a></div>
-  <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-
-<!--        -->
-      <div class="clearfix"></div>
-    </footer>
+          </div>
+        </div>
+      </article>
+      
   </div>
-</article>
-
-
-<section id="comment">
-<!--   <h1 class="title">留言</h1> -->
-
-
-    <!-- 多说评论框 start -->
-<div class="ds-thread" data-thread-key="2016/02/16/升级Win10时语言不同不能保留apps/" data-title="升级Win10时语言不同不能保留apps" data-url="http://blog.xuchen.win/2016/02/16/升级Win10时语言不同不能保留apps/"></div>
-<!-- 多说评论框 end -->
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"laozhongyi"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-     || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-  </script>
-<!-- 多说公共JS代码 end -->
-
-
   
-</section>
-
-
-
-</div></div>
+<nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
   		<aside id="sidebar" class="alignright">
   
 <div class="widget tag">

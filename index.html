@@ -86,10 +86,16 @@
       
         <div id="toc" class="toc-article">
 	<div class="toc-title">目录</div>
-	
+	<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#u89E3_u51B3_u529E_u6CD5_uFF1A"><span class="toc-text">解决办法：</span></a></li></ol>
 </div>
       
-        
+        <p>公司一笔记本升级win10,自带的是OEM的中文版win7 Home Basic，因为需要用英文版，anytime upgrade到Ultimate版。现在下好了英文版win10的安装包，那么问题来了，到了选择保留哪些东西的那一步卡壳了，keep personal settings and apps那项不能选，下面有一句 <code>”You can‘t keep Windows settings, personal files, and apps because you’ve chosen to install Windows 10 using a different language than you&#39;re currently using. “</code><br>造成这个问题是因为虽然你把系统显示语言改成英文了但是UI language依然是中文，运行<code>dism /online /get-intl</code> 可以看到</p>
+<h3 id="u89E3_u51B3_u529E_u6CD5_uFF1A"><a href="#u89E3_u51B3_u529E_u6CD5_uFF1A" class="headerlink" title="解决办法："></a>解决办法：</h3><ul>
+<li>重启，按F8, 选<strong> Repair Your Computer </strong> –&gt; <strong> Command Prompt </strong></li>
+<li>` dism /image:e:\  /set-uilanguage:en-US （e是你系统所在的那个盘符，修复模式其实是启动PE系统，所以系统盘符会变，这个在你选择命令行模式的那个界面有显示，看一下就好了）</li>
+<li>再重启就可以正常安装了，微软系统从win8开始语言包就可以随便改了，家庭版也无妨。不像win7必须得是旗帜版才可以改系统语言，专业版都不好使。</li>
+</ul>
+
       
     </div>
     <footer>
@@ -134,7 +140,8 @@
 	
 </div>
       
-        
+        <p>桂枝：降冲逆</p>
+
       
     </div>
     <footer>
@@ -176,10 +183,10 @@
       
         <div id="toc" class="toc-article">
 	<div class="toc-title">目录</div>
-	
+	<ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#OOP_Object_Oriented_Processing__u9762_u5411_u5BF9_u8C61_u7F16_u7A0B"><span class="toc-text">OOP Object Oriented Processing 面向对象编程</span></a></li></ol>
 </div>
       
-        
+        <h3 id="OOP_Object_Oriented_Processing__u9762_u5411_u5BF9_u8C61_u7F16_u7A0B"><a href="#OOP_Object_Oriented_Processing__u9762_u5411_u5BF9_u8C61_u7F16_u7A0B" class="headerlink" title="OOP Object Oriented Processing 面向对象编程"></a>OOP Object Oriented Processing 面向对象编程</h3>
       
     </div>
     <footer>
@@ -369,10 +376,22 @@
   <h3 class="title" id="categories">分类</h3>
 <!--   
 	
+		<li><a href="/categories/Windows/">Windows</a><small>1</small></li>
+	
+  
+	
 		<li><a href="/categories/mark/">mark</a><small>3</small></li>
 	
+  
+	
+		<li><a href="/categories/python/">python</a><small>1</small></li>
+	
+  
+	
+		<li><a href="/categories/中医/">中医</a><small>1</small></li>
+	
    -->
-     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/mark/">mark</a><span class="category-list-count">3</span></li></ul> 
+     <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mark/">mark</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/python/">python</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/中医/">中医</a><span class="category-list-count">1</span></li></ul> 
 </div>
  
 
@@ -403,7 +422,7 @@
 <div class="widget tagcloud">
   <h3 class="title">标签云</h3>
   <div class="entry">
-    <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/中医/" style="font-size: 10px;">中医</a>
+    <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/python-oop/" style="font-size: 10px;">python oop</a> <a href="/tags/中医/" style="font-size: 10px;">中医</a> <a href="/tags/伤寒论-中医-仲景之法/" style="font-size: 10px;">伤寒论 中医 仲景之法</a>
   </div>
 </div>
 
