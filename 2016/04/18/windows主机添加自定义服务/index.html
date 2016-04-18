@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="windows," />
 
 
 
@@ -80,15 +80,25 @@
 
 
 
-<meta name="description" content="一个对中医执着的运维">
-<meta property="og:type" content="website">
-<meta property="og:title" content="勤求古训 博采众方">
-<meta property="og:url" content="http://blog.xuchen.win/tags/markdown/index.html">
+<meta name="description" content="实现其开机自动启动步骤其实很简单。这里用到的是微软的两个小工具。instsrv.exe和srvany.exe
+微软对instsrv.exe的官方说明如下：
+Installs and uninstalls executable services and assigns names to them. 也就是个加载services的小东东。
+其用法如下：instsrv   （这里的srvany path">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows主机添加自定义服务">
+<meta property="og:url" content="http://blog.xuchen.win/2016/04/18/windows主机添加自定义服务/index.html">
 <meta property="og:site_name" content="勤求古训 博采众方">
-<meta property="og:description" content="一个对中医执着的运维">
+<meta property="og:description" content="实现其开机自动启动步骤其实很简单。这里用到的是微软的两个小工具。instsrv.exe和srvany.exe
+微软对instsrv.exe的官方说明如下：
+Installs and uninstalls executable services and assigns names to them. 也就是个加载services的小东东。
+其用法如下：instsrv   （这里的srvany path">
+<meta property="og:updated_time" content="2016-04-18T02:52:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="勤求古训 博采众方">
-<meta name="twitter:description" content="一个对中医执着的运维">
+<meta name="twitter:title" content="Windows主机添加自定义服务">
+<meta name="twitter:description" content="实现其开机自动启动步骤其实很简单。这里用到的是微软的两个小工具。instsrv.exe和srvany.exe
+微软对instsrv.exe的官方说明如下：
+Installs and uninstalls executable services and assigns names to them. 也就是个加载services的小东东。
+其用法如下：instsrv   （这里的srvany path">
 
 
 
@@ -106,7 +116,7 @@
   };
 </script>
 
-  <title> 标签: markdown | 勤求古训 博采众方 </title>
+  <title> Windows主机添加自定义服务 | 勤求古训 博采众方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -127,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -225,46 +235,168 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        markdown
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Windows主机添加自定义服务
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-04-18T10:50:48+08:00" content="2016-04-18">
+              2016-04-18
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/04/18/windows主机添加自定义服务/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/04/18/windows主机添加自定义服务/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/04/18/windows主机添加自定义服务/" class="leancloud_visitors" data-flag-title="Windows主机添加自定义服务">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>实现其开机自动启动步骤其实很简单。这里用到的是微软的两个小工具。instsrv.exe和srvany.exe</p>
+<p>微软对instsrv.exe的官方说明如下：</p>
+<p>Installs and uninstalls executable services and assigns names to them. 也就是个加载services的小东东。</p>
+<p>其用法如下：instsrv <service name=""> <srvany path=""> （这里的srvany path也就是工具srvany.exe的路径了）</srvany></service></p>
+<p>解释下，srvany.exe是微软出的用于将一个程序注册为一个服务的小程序。它可以实现讲任何程序设置成服务启动。具体用法可以自己想下哦。</p>
+<p>解释完毕，现在来实际的操作了吧。</p>
+<p>1.讲所需要的工具instsrv.exe和srvany.exe放在一个文件夹内，在这我放在d:\tools中吧。</p>
+<p>2.需要了解vmware.exe的安装路径，以本机为例：D:\VMware Workstation\vmware.exe<br>要启动的虚拟机配置文件路径，我的2003虚拟机的配置文件windows2003.vmx的路径是D:\vmare\windows2003\windows server 2003.vmx</p>
+<p>3.新建服务</p>
+<p>假设服务名为vm_autostart，所以我的命令行是：</p>
+<p>instsrv VM_AutoStart  D:\tools\srvany.exe</p>
+<p>4.注册服务</p>
+<p>在注册表中，定位到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vm_autostart<br>新建项：”Parameters”<br>在”Parameters”项里面，新建字符串”Application”，<br>字符串的值：<br>“D:\VMware Workstation\vmware.exe” -x “D:\vmare\windows2003\windows server 2003.vmx”</p>
+<p>(如果你想要开机加载两个虚拟机系统，只需要在其后再添加一个虚拟机配置文件路径即可）</p>
 
-      <h1 class="post-title">
+      
+    </div>
+    
+    <div>
+      
         
-            <a class="post-title-link" href="/2015/12/30/markdown 语法/" itemprop="url">
-              
-                <span itemprop="name">Markdown 语法</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2015-12-30T09:49:38+08:00"
-              content="2015-12-30" >
-          12-30
-        </time>
-      </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/windows/" rel="tag">#windows</a>
+          
+        </div>
+      
 
-    </header>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/02/17/伤寒论条文背诵/" rel="next" title="伤寒论条文背诵（太阳篇）">
+                <i class="fa fa-chevron-left"></i> 伤寒论条文背诵（太阳篇）
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/04/18/windows主机添加自定义服务/"
+     data-title="Windows主机添加自定义服务"
+     data-content=""
+     data-url="http://blog.xuchen.win/2016/04/18/windows主机添加自定义服务/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -272,6 +404,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/04/18/windows主机添加自定义服务/"
+           data-title="Windows主机添加自定义服务" data-url="http://blog.xuchen.win/2016/04/18/windows主机添加自定义服务/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -291,8 +431,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://raw.githubusercontent.com/liandayoufu/laozhongyi.github.com/write/images/zhongjing.png"
@@ -342,6 +491,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -438,6 +598,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
