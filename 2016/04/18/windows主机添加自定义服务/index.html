@@ -92,7 +92,7 @@ Installs and uninstalls executable services and assigns n">
 实现其开机自动启动步骤其实很简单。这里用到的是微软的两个小工具。instsrv.exe和srvany.exe
 微软对instsrv.exe的官方说明如下：
 Installs and uninstalls executable services and assigns n">
-<meta property="og:updated_time" content="2016-04-18T07:52:23.000Z">
+<meta property="og:updated_time" content="2016-04-18T09:02:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Windows主机添加自定义服务">
 <meta name="twitter:description" content="原文地址：http://www.cnblogs.com/wangchenxicool/articles/2553966.html
@@ -372,10 +372,10 @@ Installs and uninstalls executable services and assigns n">
 <p>1.讲所需要的工具instsrv.exe和srvany.exe放在一个文件夹内，在这我放在d:\tools中吧。</p>
 <p>2.需要了解vmware.exe的安装路径，以本机为例：D:\VMware Workstation\vmware.exe<br>要启动的虚拟机配置文件路径，我的2003虚拟机的配置文件windows2003.vmx的路径是D:\vmare\windows2003\windows server 2003.vmx</p>
 <p>3.新建服务</p>
-<p>假设服务名为vm_autostart，所以我的命令行是：</p>
-<p>instsrv VM_AutoStart  D:\tools\srvany.exe</p>
+<p>假设服务名为vm_autostart，所以我的命令行是:</p>
+<p> <code>instsrv VM_AutoStart  D:\tools\srvany.exe</code></p>
 <p>4.注册服务</p>
-<p>在注册表中，定位到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vm_autostart<br>新建项：”Parameters”<br>在”Parameters”项里面，新建字符串”Application”，<br>字符串的值：<br>“D:\VMware Workstation\vmware.exe” -x “D:\vmare\windows2003\windows server 2003.vmx”</p>
+<p>在注册表中，定位到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vm_autostart<br>新建项：”Parameters”<br>在”Parameters”项里面，新建字符串”Application”，<br>字符串的值：<br><code>&quot;D:\VMware Workstation\vmware.exe&quot; -x &quot;D:\vmare\windows2003\windows server 2003.vmx&quot;</code></p>
 <p>(如果你想要开机加载两个虚拟机系统，只需要在其后再添加一个虚拟机配置文件路径即可）</p>
 
       

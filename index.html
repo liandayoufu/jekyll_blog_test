@@ -503,10 +503,10 @@
 <p>1.讲所需要的工具instsrv.exe和srvany.exe放在一个文件夹内，在这我放在d:\tools中吧。</p>
 <p>2.需要了解vmware.exe的安装路径，以本机为例：D:\VMware Workstation\vmware.exe<br>要启动的虚拟机配置文件路径，我的2003虚拟机的配置文件windows2003.vmx的路径是D:\vmare\windows2003\windows server 2003.vmx</p>
 <p>3.新建服务</p>
-<p>假设服务名为vm_autostart，所以我的命令行是：</p>
-<p>instsrv VM_AutoStart  D:\tools\srvany.exe</p>
+<p>假设服务名为vm_autostart，所以我的命令行是:</p>
+<p> <code>instsrv VM_AutoStart  D:\tools\srvany.exe</code></p>
 <p>4.注册服务</p>
-<p>在注册表中，定位到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vm_autostart<br>新建项：”Parameters”<br>在”Parameters”项里面，新建字符串”Application”，<br>字符串的值：<br>“D:\VMware Workstation\vmware.exe” -x “D:\vmare\windows2003\windows server 2003.vmx”</p>
+<p>在注册表中，定位到HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\vm_autostart<br>新建项：”Parameters”<br>在”Parameters”项里面，新建字符串”Application”，<br>字符串的值：<br><code>&quot;D:\VMware Workstation\vmware.exe&quot; -x &quot;D:\vmare\windows2003\windows server 2003.vmx&quot;</code></p>
 <p>(如果你想要开机加载两个虚拟机系统，只需要在其后再添加一个虚拟机配置文件路径即可）</p>
 
           
