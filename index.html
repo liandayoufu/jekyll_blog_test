@@ -288,6 +288,125 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/10/awk-trick/" itemprop="url">
+                  Awk Trick
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T17:24:00+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/awk-trick/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/awk-trick/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/10/awk-trick/" class="leancloud_visitors" data-flag-title="Awk Trick">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>[root@localhost]# cat a
+a 1
+a 2
+b 3
+a 7
+c 4
+d 5
+d 6
+</code></pre><p>#####要求输出如下：<br>    a  1 2 7<br>    b  3<br>    c  4<br>    d  5 6</p>
+<p>awk一条命令搞定<br><code>awk &#39;{arr[$1]=arr[$1]&quot; &quot;$2} END {for (i in arr) {print i,arr[i]}}&#39; a</code></p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/18/hexo-next主题配置文档/" itemprop="url">
                   Hexo Next主题配置文档
                 </a>
@@ -1478,154 +1597,13 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/30/git-basic-usage/" itemprop="url">
-                  Git Basic Usage
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-30T09:07:00+08:00" content="2015-12-30">
-              2015-12-30
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/mark/" itemprop="url" rel="index">
-                    <span itemprop="name">mark</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/30/git-basic-usage/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/30/git-basic-usage/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/12/30/git-basic-usage/" class="leancloud_visitors" data-flag-title="Git Basic Usage">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="git__u77E5_u8BC6_u8981_u70B9"><a href="#git__u77E5_u8BC6_u8981_u70B9" class="headerlink" title="git 知识要点"></a>git 知识要点</h2><p>git 是一个去中心化的版本管理工具，不需要时时在线，只有在开发完成提交时在线即可，不同于svn需要时时在线。</p>
-<p>### </p>
-<h3 id="bug__u5206_u652F_u7BA1_u7406"><a href="#bug__u5206_u652F_u7BA1_u7406" class="headerlink" title="bug 分支管理"></a>bug 分支管理</h3><p><em>场景：</em>正在<strong>dev</strong> 分支做开发，但是还没有完成，暂时还不能提交。</p>
-<ul>
-<li><code>git stash</code> 临时保存工作现场</li>
-<li><code>git checkout master</code> 假定是需要在master分支做修复，切换到master分支</li>
-<li><code>git checkout -b issue-101</code> 创建新的issue-101bug修复分支</li>
-<li><code>git commit -m &quot;bug 101 fixed&quot;</code> 修复完成提交</li>
-<li><code>git checkout master; git merge -m &quot;merged bug fixed 101&quot; issue-101</code>  切换到master并将issue-101分支合并过来，<ul>
-<li><strong>–no-ff</strong>  参数用普通方式合并，合并后的历史有分支，能看出来曾经做过合并，<strong>fast forward</strong>合并看不出来曾经做过合并</li>
-</ul>
-</li>
-<li><code>git stash list</code> 可以查看之前保存的stash信息</li>
-<li><code>git stash apply</code> 可以恢复现场，但是恢复后stash内容不删除，需要<code>git stash drop</code> 删除；<code>git stash pop</code> 相当于前面两条命令</li>
-</ul>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2015/12/30/git-basic-usage/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
 
 
           </div>
@@ -1664,7 +1642,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">10</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1681,7 +1659,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-count">10</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

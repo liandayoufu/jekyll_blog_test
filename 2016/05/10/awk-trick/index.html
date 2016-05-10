@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="中医,伤寒论" />
+  <meta name="keywords" content="awk," />
 
 
 
@@ -80,15 +80,43 @@
 
 
 
-<meta name="description" content="一个对中医执着的运维">
-<meta property="og:type" content="website">
-<meta property="og:title" content="勤求古训 博采众方">
-<meta property="og:url" content="http://blog.xuchen.win/tags/中医/index.html">
+<meta name="description" content="[root@localhost]# cat a
+a 1
+a 2
+b 3
+a 7
+c 4
+d 5
+d 6
+#####要求输出如下：    a  1 2 7    b  3    c  4    d  5 6
+awk一条命令搞定awk &amp;#39;{arr[$1]=arr[$1]&amp;quot; &amp;quot;$2} END {for (i in arr) {print i,arr[i]}}&amp;#39; a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Awk Trick">
+<meta property="og:url" content="http://blog.xuchen.win/2016/05/10/awk-trick/index.html">
 <meta property="og:site_name" content="勤求古训 博采众方">
-<meta property="og:description" content="一个对中医执着的运维">
+<meta property="og:description" content="[root@localhost]# cat a
+a 1
+a 2
+b 3
+a 7
+c 4
+d 5
+d 6
+#####要求输出如下：    a  1 2 7    b  3    c  4    d  5 6
+awk一条命令搞定awk &amp;#39;{arr[$1]=arr[$1]&amp;quot; &amp;quot;$2} END {for (i in arr) {print i,arr[i]}}&amp;#39; a">
+<meta property="og:updated_time" content="2016-05-10T09:28:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="勤求古训 博采众方">
-<meta name="twitter:description" content="一个对中医执着的运维">
+<meta name="twitter:title" content="Awk Trick">
+<meta name="twitter:description" content="[root@localhost]# cat a
+a 1
+a 2
+b 3
+a 7
+c 4
+d 5
+d 6
+#####要求输出如下：    a  1 2 7    b  3    c  4    d  5 6
+awk一条命令搞定awk &amp;#39;{arr[$1]=arr[$1]&amp;quot; &amp;quot;$2} END {for (i in arr) {print i,arr[i]}}&amp;#39; a">
 
 
 
@@ -106,7 +134,7 @@
   };
 </script>
 
-  <title> 标签: 中医 | 勤求古训 博采众方 </title>
+  <title> Awk Trick | 勤求古训 博采众方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +164,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -264,46 +292,164 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        中医
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Awk Trick
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-10T17:24:00+08:00" content="2016-05-10">
+              2016-05-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/10/awk-trick/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/10/awk-trick/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/05/10/awk-trick/" class="leancloud_visitors" data-flag-title="Awk Trick">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <pre><code>[root@localhost]# cat a
+a 1
+a 2
+b 3
+a 7
+c 4
+d 5
+d 6
+</code></pre><p>#####要求输出如下：<br>    a  1 2 7<br>    b  3<br>    c  4<br>    d  5 6</p>
+<p>awk一条命令搞定<br><code>awk &#39;{arr[$1]=arr[$1]&quot; &quot;$2} END {for (i in arr) {print i,arr[i]}}&#39; a</code></p>
 
-      <h1 class="post-title">
+      
+    </div>
+    
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/01/06/随便说说/" itemprop="url">
-              
-                <span itemprop="name">随便说说</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-01-06T09:36:36+08:00"
-              content="2016-01-06" >
-          01-06
-        </time>
-      </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/awk/" rel="tag">#awk</a>
+          
+        </div>
+      
 
-    </header>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/04/18/hexo-next主题配置文档/" rel="next" title="Hexo Next主题配置文档">
+                <i class="fa fa-chevron-left"></i> Hexo Next主题配置文档
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/05/10/awk-trick/"
+     data-title="Awk Trick"
+     data-content=""
+     data-url="http://blog.xuchen.win/2016/05/10/awk-trick/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -311,6 +457,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/10/awk-trick/"
+           data-title="Awk Trick" data-url="http://blog.xuchen.win/2016/05/10/awk-trick/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -330,8 +484,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://raw.githubusercontent.com/liandayoufu/laozhongyi.github.com/write/images/zhongjing.png"
@@ -381,6 +544,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -477,6 +651,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
