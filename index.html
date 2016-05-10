@@ -356,8 +356,11 @@ a 7
 c 4
 d 5
 d 6
-</code></pre><p>#####要求输出如下：<br>    a  1 2 7<br>    b  3<br>    c  4<br>    d  5 6</p>
-<p>awk一条命令搞定<br><code>awk &#39;{arr[$1]=arr[$1]&quot; &quot;$2} END {for (i in arr) {print i,arr[i]}}&#39; a</code></p>
+</code></pre><h5 id="u8981_u6C42_u8F93_u51FA_u5982_u4E0B_uFF1A"><a href="#u8981_u6C42_u8F93_u51FA_u5982_u4E0B_uFF1A" class="headerlink" title="要求输出如下："></a>要求输出如下：</h5><pre><code>a  1 2 7
+b  3
+c  4
+d  5 6
+</code></pre><p>awk一条命令搞定<br><code>awk &#39;{arr[$1]=arr[$1]&quot; &quot;$2} END {for (i in arr) {print i,arr[i]}}&#39; a</code></p>
 
           
         
