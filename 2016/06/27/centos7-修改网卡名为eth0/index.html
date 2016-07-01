@@ -64,7 +64,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="中医,伤寒论" />
+  <meta name="keywords" content="centos7 linux rhel7," />
 
 
 
@@ -80,15 +80,22 @@
 
 
 
-<meta name="description" content="一个对中医执着的运维">
-<meta property="og:type" content="website">
-<meta property="og:title" content="勤求古训 博采众方">
-<meta property="og:url" content="http://blog.xuchen.win/tags/hexo/index.html">
+<meta name="description" content="编辑/etc/default/grubGRUB_CMDLINE_LINUX  加net.ifnames=0 biosdevname=0
+重新生成grub配置并更新内核参数grub2-mkconfig -o /boot/grub2/grub.cfg
+/etc/sysconfig/network-scripts/ifcfg-eth0 文件改名NAME=eth0DEVICE=eth0HWADDR=”这条">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Centos7 修改网卡名为Eth0">
+<meta property="og:url" content="http://blog.xuchen.win/2016/06/27/centos7-修改网卡名为eth0/index.html">
 <meta property="og:site_name" content="勤求古训 博采众方">
-<meta property="og:description" content="一个对中医执着的运维">
+<meta property="og:description" content="编辑/etc/default/grubGRUB_CMDLINE_LINUX  加net.ifnames=0 biosdevname=0
+重新生成grub配置并更新内核参数grub2-mkconfig -o /boot/grub2/grub.cfg
+/etc/sysconfig/network-scripts/ifcfg-eth0 文件改名NAME=eth0DEVICE=eth0HWADDR=”这条">
+<meta property="og:updated_time" content="2016-07-01T02:10:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="勤求古训 博采众方">
-<meta name="twitter:description" content="一个对中医执着的运维">
+<meta name="twitter:title" content="Centos7 修改网卡名为Eth0">
+<meta name="twitter:description" content="编辑/etc/default/grubGRUB_CMDLINE_LINUX  加net.ifnames=0 biosdevname=0
+重新生成grub配置并更新内核参数grub2-mkconfig -o /boot/grub2/grub.cfg
+/etc/sysconfig/network-scripts/ifcfg-eth0 文件改名NAME=eth0DEVICE=eth0HWADDR=”这条">
 
 
 
@@ -106,7 +113,7 @@
   };
 </script>
 
-  <title> 标签: hexo | 勤求古训 博采众方 </title>
+  <title> Centos7 修改网卡名为Eth0 | 勤求古训 博采众方 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -264,46 +271,180 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        hexo
-        <small>标签</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Centos7 修改网卡名为Eth0
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-06-27T15:26:02+08:00" content="2016-06-27">
+              2016-06-27
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/06/27/centos7-修改网卡名为eth0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/27/centos7-修改网卡名为eth0/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/06/27/centos7-修改网卡名为eth0/" class="leancloud_visitors" data-flag-title="Centos7 修改网卡名为Eth0">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>编辑<code>/etc/default/grub</code><br>GRUB_CMDLINE_LINUX  加net.ifnames=0 biosdevname=0</p>
+<p>重新生成grub配置并更新内核参数<br>grub2-mkconfig -o /boot/grub2/grub.cfg</p>
+<p>/etc/sysconfig/network-scripts/ifcfg-eth0 文件改名<br>NAME=eth0<br>DEVICE=eth0<br>HWADDR=”<code>这条要加上，不然IP地址不生效</code>“</p>
+<p>udev 键/值对操作符</p>
+<p>操作符        匹配或赋值                             解释<br>－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－<br>==             匹配                        相等比较<br>!=              匹配                        不等比较<br>=                赋值                       分配一个特定的值给该键，他可以覆盖之前的赋值。<br>+=              赋值                       追加特定的值给已经存在的键<br>:=               赋值                       分配一个特定的值给该键，后面的规则不可能覆盖它。</p>
+<p>这有点类似我们常见的编程语言，比如C语言。只是这里的键一次可以处理多个值。有一些键在udev规则文件里经常出现，这些键的值可以使用通配符(*,?,甚至范围，比如[0-9])，这些常用键列举如下：</p>
+<p>常用udev键<br>键                 含义<br>ACTION                     一个时间活动的名字，比如add，当设备增加的时候<br>KERNEL                     在内核里看到的设备名字，比如sd<em>表示任意SCSI磁盘设备<br>DEVPATH              内核设备录进，比如/devices/</em><br>SUBSYSTEM              子系统名字，比如sound,net<br>BUS                     总线的名字，比如IDE,USB<br>DRIVER                     设备驱动的名字，比如ide-cdrom<br>ID                       独立于内核名字的设备名字<br>SYSFS{ value}              sysfs属性值，他可以表示任意<br>ENV{ key}              环境变量，可以表示任意<br>PROGRAM              可执行的外部程序，如果程序返回0值，该键则认为为真(true)<br>RESULT                     上一个PROGRAM调用返回的标准输出。<br>NAME                     根据这个规则创建的设备文件的文件名。注意：仅仅第一行的NAME描述是有效的，后面的均忽略。 如果你想使用使用两个以上的名字来访问一个设备的话，可以考虑SYMLINK键。<br>SYMLINK              根据规则创建的字符连接名<br>OWNER                     设备文件的属组<br>GROUP                     设备文件所在的组。<br>MODE                     设备文件的权限，采用8进制<br>RUN                     为设备而执行的程序列表<br>LABEL                     在配置文件里为内部控制而采用的名字标签(下下面的GOTO服务)<br>GOTO                     跳到匹配的规则（通过LABEL来标识），有点类似程序语言中的GOTO<br>IMPORT{ type}           导入一个文件或者一个程序执行后而生成的规则集到当前文件<br>WAIT_FOR_SYSFS         等待一个特定的设备文件的创建。主要是用作时序和依赖问题。<br>PTIONS                     特定的选项： last_rule 对这类设备终端规则执行； ignore_device 忽略当前规则； ignore_remove 忽略接下来的并移走请求。all_partitions 为所有的磁盘分区创建设备文件。</p>
 
-      <h1 class="post-title">
+      
+    </div>
+    
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/04/18/hexo-next主题配置文档/" itemprop="url">
-              
-                <span itemprop="name">Hexo Next主题配置文档</span>
-              
-            </a>
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
+      
+    </div>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-04-18T17:19:49+08:00"
-              content="2016-04-18" >
-          04-18
-        </time>
-      </div>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/centos7-linux-rhel7/" rel="tag">#centos7 linux rhel7</a>
+          
+        </div>
+      
 
-    </header>
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/10/awk-trick/" rel="next" title="Awk Trick">
+                <i class="fa fa-chevron-left"></i> Awk Trick
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/06/27/centos7-修改网卡名为eth0/"
+     data-title="Centos7 修改网卡名为Eth0"
+     data-content=""
+     data-url="http://blog.xuchen.win/2016/06/27/centos7-修改网卡名为eth0/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -311,6 +452,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/06/27/centos7-修改网卡名为eth0/"
+           data-title="Centos7 修改网卡名为Eth0" data-url="http://blog.xuchen.win/2016/06/27/centos7-修改网卡名为eth0/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -330,8 +479,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="https://raw.githubusercontent.com/liandayoufu/laozhongyi.github.com/write/images/zhongjing.png"
@@ -381,6 +539,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -477,6 +646,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
