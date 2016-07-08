@@ -385,7 +385,7 @@ sdevname=`ifconfig | grep eno | awk &apos;{print $1}&apos;`
 sed -i &apos;s/rhgb/net.ifname=0\ rhgb/g&apos; /etc/default/grub
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
-cat &gt; $devconfdir/$devname &lt;&lt;OF
+cat &gt; $devconfdir/$devname &lt;&lt;EOF
 NAME=$devname
 DEVNAME=$devname
 IPADDR=$ipaddr
