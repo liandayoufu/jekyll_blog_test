@@ -380,18 +380,24 @@ devname=${devname:=eth0}
 ipaddr=172.16.100.10
 gateway=172.16.100.1
 hwaddr=`ifconfig | grep -A 3 eno | awk &apos;/ether/ {print $2}&apos;`
-sdevname=`ifconfig | grep eno | awk &apos;{print $1}&apos;`
+sdevname=`ifconfig | grep eno | awk  -F: &apos;{print $1}&apos;`
 
 sed -i &apos;s/rhgb/net.ifname=0\ rhgb/g&apos; /etc/default/grub
 grub2-mkconfig -o /boot/grub2/grub.cfg
 
-cat &gt; $devconfdir/$devname &lt;&lt;EOF
+cat &gt; $devconfdir/ifcfg-$devname &lt;&lt;EOF
+TYPE=Ethernet
+ONBOOT=yes
 NAME=$devname
 DEVNAME=$devname
-IPADDR=$ipaddr
-GATEWAY=$gateway
+BOOTPROTO=dhcp
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
 HWADDR=$hwaddr
 EOF
+
+mv $devconfdir/ifcfg-$sdevname $devconfdir/ifcfg-$sdevname.bak
 
 read -p &quot;config finished are you want to restart now y|n&quot; sig
 case &quot;$sig&quot; in 
