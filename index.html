@@ -989,6 +989,146 @@ d  5 6
             
               
                 
+                <a class="post-title-link" href="/2016/02/18/更改win8-win10系统默认UI语言/" itemprop="url">
+                  更改Win8-win10系统默认UI语言
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-02-18T15:59:27+08:00" content="2016-02-18">
+              2016-02-18
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Windows/" itemprop="url" rel="index">
+                    <span itemprop="name">Windows</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/02/18/更改win8-win10系统默认UI语言/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/18/更改win8-win10系统默认UI语言/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/02/18/更改win8-win10系统默认UI语言/" class="leancloud_visitors" data-flag-title="更改Win8-win10系统默认UI语言">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>win7的时候如果你想改系统语言，如果你的系统不是旗舰版（Ultimate）不好意思，你是改不了的，哪怕你是pro版。只有旗舰版才支持下载语言包更改系统语言。<br>好在这个问题从win8开始就已经不存在了，微软自己也觉得自己这样够变态吧。win7的时候要是家庭版是不可以加域的要专业版或企业版以上才行，win8 win10好像可以了？谁试过告知一下。<br>好吧更改系统语言是没问题了，手头一个win10中文版下载语言包更改为英文了。然后下载用微软年度1607英文系统更新镜像更新系统时问题出现了<code>“You can&#39;t keep Windows settings, personal files, and apps because you&#39;ve chosen to install Windows 10 using a different language than you&#39;re currently using.”</code> what??  系统语言已经改成英文的了还说不是同一语言？<br>百度之发现原来还存在个<strong>系统默认UI语言（Base Language）</strong>一说，解决过程如下：</p>
+<p>造成这个问题是因为虽然你把系统显示语言改成英文了但是UI language依然是中文，运行<code>dism /online /get-intl</code> 可以看到</p>
+<h3 id="u89E3_u51B3_u529E_u6CD5_uFF1A"><a href="#u89E3_u51B3_u529E_u6CD5_uFF1A" class="headerlink" title="解决办法："></a>解决办法：</h3><ul>
+<li>重启，按F8, 选<strong> Repair Your Computer </strong> –&gt; <strong> Command Prompt </strong></li>
+<li>` dism /image:e:\  /set-uilanguage:en-US （e是你系统所在的那个盘符，修复模式其实是启动PE系统，所以系统盘符会变，这个在你选择命令行模式的那个界面有显示，看一下就好了）</li>
+<li>再重启就可以正常安装了，微软系统从win8开始语言包就可以随便改了，家庭版也无妨。不像win7必须得是旗帜版才可以改系统语言，专业版都不好使。</li>
+</ul>
+<p>参考链接：</p>
+<ul>
+<li><a href="https://241931348f64b1d1.wordpress.com/2013/11/06/howto-change-base-os-language-on-windows-8/" target="_blank" rel="external">How to Change Base OS Language on Windows 8</a></li>
+<li><a href="https://social.technet.microsoft.com/Forums/en-US/e4a8bf93-8dd7-48b2-ac84-266af3d14fa5/you-cant-keep-windows-settings-personal-files-and-apps-because-youve-chosen-to-install-windows?forum=win10itprosetup" target="_blank" rel="external">You can`t keep Windows settings, personal files, and apps</a></li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/02/17/伤寒论条文背诵/" itemprop="url">
                   伤寒论条文背诵（太阳篇）
                 </a>
@@ -1104,140 +1244,6 @@ d  5 6
               阅读全文 &raquo;
             </a>
           </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/02/16/升级Win10时语言不同不能保留apps/" itemprop="url">
-                  升级Win10时语言不同不能保留apps
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-02-16T15:59:27+08:00" content="2016-02-16">
-              2016-02-16
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Windows/" itemprop="url" rel="index">
-                    <span itemprop="name">Windows</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/02/16/升级Win10时语言不同不能保留apps/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/02/16/升级Win10时语言不同不能保留apps/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/02/16/升级Win10时语言不同不能保留apps/" class="leancloud_visitors" data-flag-title="升级Win10时语言不同不能保留apps">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>公司一笔记本升级win10,自带的是OEM的中文版win7 Home Basic，因为需要用英文版，anytime upgrade到Ultimate版。现在下好了英文版win10的安装包，那么问题来了，到了选择保留哪些东西的那一步卡壳了，keep personal settings and apps那项不能选，下面有一句 <code>”You can‘t keep Windows settings, personal files, and apps because you’ve chosen to install Windows 10 using a different language than you&#39;re currently using. “</code><br>造成这个问题是因为虽然你把系统显示语言改成英文了但是UI language依然是中文，运行<code>dism /online /get-intl</code> 可以看到</p>
-<h3 id="u89E3_u51B3_u529E_u6CD5_uFF1A"><a href="#u89E3_u51B3_u529E_u6CD5_uFF1A" class="headerlink" title="解决办法："></a>解决办法：</h3><ul>
-<li>重启，按F8, 选<strong> Repair Your Computer </strong> –&gt; <strong> Command Prompt </strong></li>
-<li>` dism /image:e:\  /set-uilanguage:en-US （e是你系统所在的那个盘符，修复模式其实是启动PE系统，所以系统盘符会变，这个在你选择命令行模式的那个界面有显示，看一下就好了）</li>
-<li>再重启就可以正常安装了，微软系统从win8开始语言包就可以随便改了，家庭版也无妨。不像win7必须得是旗帜版才可以改系统语言，专业版都不好使。</li>
-</ul>
-
-          
         
       
     </div>
