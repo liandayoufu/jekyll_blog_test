@@ -288,6 +288,122 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/06/powershell-引用变量值、计算结果-Get-Process-Stop-Precess关掉指定进程/" itemprop="url">
+                  Powershell 引用变量值、计算结果 Get-Process|Stop-Precess关掉指定进程
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-06T11:33:02+08:00" content="2016-12-06">
+              2016-12-06
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/06/powershell-引用变量值、计算结果-Get-Process-Stop-Precess关掉指定进程/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/06/powershell-引用变量值、计算结果-Get-Process-Stop-Precess关掉指定进程/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/12/06/powershell-引用变量值、计算结果-Get-Process-Stop-Precess关掉指定进程/" class="leancloud_visitors" data-flag-title="Powershell 引用变量值、计算结果 Get-Process|Stop-Precess关掉指定进程">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>源起:</strong><br>自打换了win10以后，outlook经常会出现<code>not responding</code>，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会<code>无法打开\path\to\file.ost</code> 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程<code>access denied</code>。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做。于是想到cmd下命令行轻手杀进程。</p>
+<ul>
+<li><p><code>taskkill /f /pid $(tasklist | grep -i outlook | awk &#39;{print $2}&#39;)</code><br>上面这条命令在以管理员运行的cmd或powershell中运行可以解决，但是前提是你的windows系统得先安装配置好cygwin之类，因为windows是没有grep、awk这些命令的。</p>
+</li>
+<li><p>然而其实没必要这么复杂，win7开始windows就已经提供更强大的命令行工具<strong>powershell</strong>了，其自带过滤功能，一条更简洁命令解决<br><code>Get-Process outlook | Stop-Process</code> (windows下命令及文件名均不分大小写，不过养成良好的书写规范应当是一个不错的好习惯)</p>
+</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/06/27/centos7-修改网卡名为eth0/" itemprop="url">
                   Centos7 修改网卡名为Eth0
                 </a>
@@ -1528,122 +1644,6 @@ d  5 6
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/01/06/随便说说/" itemprop="url">
-                  随便说说
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-01-06T09:36:36+08:00" content="2016-01-06">
-              2016-01-06
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/01/06/随便说说/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/01/06/随便说说/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2016/01/06/随便说说/" class="leancloud_visitors" data-flag-title="随便说说">
-               &nbsp; | &nbsp;
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               <span class="post-meta-item-text">阅读次数 </span>
-               <span class="leancloud-visitors-count"></span>
-              </span>
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p> 每每听到看到医院里面人满为患，各种不治之症，各种英年早逝。在科学技术日益发达的今天，却不见人们越少受于疾病之折磨，伴之而来 的却是越来越多的病名，越来越多的无法治愈之病名，越来越多的束手无策。</p>
-<p>鸣呼哀哉！</p>
-<p><strong>想我大中华之中医历经几千年亿万生命的验证，以亿万生命血的代价换来的经验，中华传统文化之瑰宝也沦落到如此地步，真是痛哉！</strong>普遍崇尚西医，大家多以为西方西学是现代科学技术比较先进，见效快，中医疗效慢，只能调理，不能治病，各大中医院也是如此，以各种中西医结合为名头，不管看啥，进了中医院也一色先一堆检查拿了检查报告再说，仿佛没了报告就看不了病一样。殊不知，在古时，中国人没有这些个先进的仪器，看病效果竟是那样之好，诞生出那么多名医，那么多杏林佳话。而古时之所以会有那么多的重病，往往是因为当时信息交通诸多不便，求医不若现在那么方便。著名物理学家钱学森也对中医与西医有过评价，中医实乃科学，而西方医学充其量叫做科技。中医一个人往这一站就是一个医院了，这不是吹牛叉，这缘于中医对人体生理学的深刻理解和千万生命和岁月带来的经验累积。</p>
-<p>一直对中医深信不疑，无奈一直处于门外徘徊状态，终不得一窥究竟。更何况于对中医一无所知的人，定然是难以对中医树立起坚强的信心。但兵法有云，知已知彼方可百战百胜</p>
-<h3 id="u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F"><a href="#u4F60_u6839_u672C_u90FD_u4E0D_u66FE_u4E86_u89E3_u8FC7_u4E2D_u533B_uFF0C_u4E0D_u77E5_u4E2D_u533B_u6CBB_u75C5_u4E4B_u539F_u7406_uFF0C_u51ED_u4EC0_u4E48_u8BF4_u4E2D_u533B_u662F_u9A97_u4EBA_u7684_uFF1F_u4E2D_u533B_u4E0D_u53EF_u4FE1_uFF1F" class="headerlink" title="你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？"></a><strong><code>你根本都不曾了解过中医，不知中医治病之原理，凭什么说中医是骗人的？中医不可信？</code></strong></h3>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2016/01/06/随便说说/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-    
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -1689,7 +1689,7 @@ d  5 6
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-count">13</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1706,7 +1706,7 @@ d  5 6
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">12</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
