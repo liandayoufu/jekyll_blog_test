@@ -4,10 +4,10 @@
 
 # Site
 title: 勤求古训 博采众方
-subtitle:
-description:
+subtitle: 一个对中医执着的运维
+description: 一个对中医执着的运维
 author: 老中医
-language: zh-CN
+language: zh-Hans
 timezone: Asia/Shanghai
 
 # URL
@@ -30,7 +30,8 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
-titlecase: false # Transform title into titlecase
+titlecase: true # Transform title into titlecase
+auto_spacing: true # Add spaces between asian characters and westen characters
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
@@ -48,6 +49,11 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+# Archives
+archive: 1
+category: 1
+tag: 1
+
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -63,7 +69,15 @@ pagination_dir: page
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: light-ch
+#theme: light-ch
+theme: next
+
+google_analytics: UA-76563614-1
+
+exclude_generator:
+plugins:
+- hexo-generator-feed
+- hexo-generator-sitemap
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
