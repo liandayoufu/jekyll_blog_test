@@ -80,16 +80,16 @@
 
 
 
-<meta name="description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做。">
+<meta name="description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Powershell 引用变量值、计算结果 Get-Process|Stop-Precess关掉指定进程">
 <meta property="og:url" content="http://blog.xuchen.win/2016/12/06/powershell-引用变量值、计算结果-Get-Process-Stop-Precess关掉指定进程/index.html">
 <meta property="og:site_name" content="勤求古训 博采众方">
-<meta property="og:description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做。">
-<meta property="og:updated_time" content="2016-12-06T03:49:09.000Z">
+<meta property="og:description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做，">
+<meta property="og:updated_time" content="2016-12-06T06:56:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Powershell 引用变量值、计算结果 Get-Process|Stop-Precess关掉指定进程">
-<meta name="twitter:description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做。">
+<meta name="twitter:description" content="源起:自打换了win10以后，outlook经常会出现not responding，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会无法打开\path\to\file.ost 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程access denied。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做，">
 
 
 
@@ -342,11 +342,11 @@
       
 
       
-        <p><strong>源起:</strong><br>自打换了win10以后，outlook经常会出现<code>not responding</code>，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会<code>无法打开\path\to\file.ost</code> 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程<code>access denied</code>。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做。于是想到cmd下命令行轻手杀进程。</p>
+        <p><strong>源起:</strong><br>自打换了win10以后，outlook经常会出现<code>not responding</code>，然后就得关闭重启outlook，但是总是会有outlook僵尸进程无法退出导致再次打开时会<code>无法打开\path\to\file.ost</code> 这样的错误，然而当你以管理员身份运行任务管理器的时候并无法结果进程<code>access denied</code>。呵呵哒，当然可以选择重启和注销登陆。可是当你打开很多文件正在处理的时候显然你不想这么做，于是便命令行手杀进程。</p>
 <ul>
-<li><p><code>taskkill /f /pid $(tasklist | grep -i outlook | awk &#39;{print $2}&#39;)</code><br>上面这条命令在以管理员运行的cmd或powershell中运行可以解决，但是前提是你的windows系统得先安装配置好cygwin之类，因为windows是没有grep、awk这些命令的。</p>
+<li><p><code>taskkill /f /pid $(tasklist | grep -i outlook | awk &#39;{print $2}&#39;)</code><br>上面这条命令在以管理员运行的powershell中运行可以解决，但是前提是你的windows系统得先安装配置好cygwin之类，因为windows是没有grep、awk这些命令的。</p>
 </li>
-<li><p>然而其实没必要这么复杂，win7开始windows就已经提供更强大的命令行工具<strong>powershell</strong>了，其自带过滤功能，一条更简洁命令解决<br><code>Get-Process outlook | Stop-Process</code> (windows下命令及文件名均不分大小写，不过养成良好的书写规范应当是一个不错的好习惯)</p>
+<li><p>然而其实没必要这么复杂，win7开始windows就已经提供更强大的命令行工具<strong>powershell</strong>了，其自带过滤功能，一条更简洁命令解决<br><code>Get-Process outlook | Stop-Process</code>  (windows下命令及文件名均不分大小写，不过养成良好的书写规范应当是一个不错的好习惯)</p>
 </li>
 </ul>
 
